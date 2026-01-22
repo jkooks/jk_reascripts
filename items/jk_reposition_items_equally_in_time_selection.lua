@@ -1,5 +1,6 @@
 -- @description Reposition Items Equally In Time Selection
 -- @about This script sorts all selected items equally in the time selection
+-- Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
 

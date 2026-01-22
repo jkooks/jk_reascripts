@@ -1,5 +1,6 @@
 -- @description FX API for JK Scripts
 -- @about Extended API module that deals with FXs
+-- Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Kukla
 -- @version 0.0.0
 -- @noindex

@@ -19,6 +19,7 @@
 --				If the first track is a "grandparent"/part of an overarching folder structure = create a track and make it the end of that folder if there isn't one already otherwise add it as a base level track
 --
 --			If it is not the end of the folder structure = create a track within that folder
+-- Distributed under the GNU GPL v3 License. See license.txt for more information.
 
 
 --gets total depth of the parent

@@ -1,3 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index version="1.0" name="jk_reascripts">
+
+    <!-- jk_api -->
+    <category name="jk_api">
+        <reapack name="jk_api.lua" type="lua" desc="API for JK Scripts">
+            <version name="0.0.0" author="Julius Kukla">
+                <source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/jk_api/jk_api.lua</source>
+            </version>
+        </reapack>
+
+		<!-- modules -->
+        <category name="modules">
+            <reapack name="jk_fx_api.lua" type="lua" desc="FX API for JK Scripts">
+                <version name="0.0.0" author="Julius Kukla">
+                    <source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/jk_api/modules/jk_fx_api.lua</source>
+                </version>
+            </reapack>
+			<reapack name="jk_json_api.lua" type="lua" desc="JSON API for JK Scripts">
+                <version name="0.0.0" author="Julius Kukla">
+                    <source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/jk_api/modules/jk_json_api.lua</source>
+                </version>
+            </reapack>
+        </category>
+    </category>
+
+    <!-- fx -->
+    <category name="fx">
+
+		<!-- downmixer -->
+		<category name="downmixer">
+			<reapack name="jk_downmix_selected_takes_to_mono.lua" type="lua" desc="Downmix Selected Takes To Mono">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_downmix_selected_takes_to_stereo.lua" type="lua" desc="Downmix Selected Takes To Stereo">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_downmix_selected_tracks_to_mono.lua" type="lua" desc="Downmix Selected Tracks To Mono">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_downmix_selected_tracks_to_stereo.lua" type="lua" desc="Downmix Selected Tracks To Stereo">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
+				</version>
+			</reapack>
+		</category>
+    </category>
+
+    <!-- items -->
+    <category name="items">
+		<category name="extend_trim">
+			<reapack name="jk_extend_trim_options.lua" type="lua" desc="Extend Trim Options">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/items/extend_trim/jk_extend_trim_options.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_extend_trim_left_edge_no_fade.lua" type="lua" desc="Extend Trim Left Edge No Fade">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/items/extend_trim/jk_extend_trim_left_edge_no_fade.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_extend_trim_right_edge_no_fade.lua" type="lua" desc="Extend Trim Right Edge No Fade">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/items/extend_trim/jk_extend_trim_right_edge_no_fade.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_extend_trim_tail_within_bounds.lua" type="lua" desc="Extend Trim Tail Within Bounds">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/items/extend_trim/jk_extend_trim_tail_within_bounds.lua</source>
+				</version>
+			</reapack>
+			<reapack name="jk_extend_trim_top_within_bounds.lua" type="lua" desc="Extend Trim Top Within Bounds">
+				<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+					<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/items/extend_trim/jk_extend_trim_top_within_bounds.lua</source>
+				</version>
+			</reapack>
+		</category>
+
+		<reapack name="jk_reposition_items_equally_in_time_selection.lua" type="lua" desc="Reposition Items Equally In Time Selection">
+			<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+				<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/items/jk_reposition_items_equally_in_time_selection.lua</source>
+			</version>
+		</reapack>
+    </category>
+    
+	<!-- tracks -->
+    <category name="items">
+		<reapack name="jk_smart_create_track.lua" type="lua" desc="Smart Create Track">
+			<version name="0.0.0" author="Julius Kukla" time="01-22-2026">
+				<source main="main">https://raw.githubusercontent.com/jkooks/jk_reascripts/refs/heads/main/tracks/jk_smart_create_track.lua</source>
+			</version>
+		</reapack>
+    </category>
+
 </index>

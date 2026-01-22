@@ -1,5 +1,6 @@
 -- @description Downmix Selected Takes To Mono
 -- @about Adds the Downmixer plugin to the selected takes and downmixes them to mono
+-- Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
 -- @provide
