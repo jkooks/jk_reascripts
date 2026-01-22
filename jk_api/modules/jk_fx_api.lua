@@ -18,6 +18,7 @@ local jk_fx = {}
 -- CUSTOM TYPES --
 ------------------
 
+---@diagnostic disable: duplicate-doc-alias
 ---@alias ChannelMap table<number, number> alias for channel output routing - key is 1-based
 
 

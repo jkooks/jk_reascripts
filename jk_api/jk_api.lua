@@ -21,6 +21,18 @@
 
 local jk = {}
 
+------------------
+-- CUSTOM TYPES --
+------------------
+
+---@diagnostic disable: duplicate-doc-alias
+---@alias ReaProject userdata
+---@alias MediaItem userdata
+---@alias MediaItem_Take userdata
+---@alias MediaTrack userdata
+---@alias TrackEnvelope userdata
+---@alias PCM_source userdata
+
 
 ---------------
 ---- ENUMS ----
