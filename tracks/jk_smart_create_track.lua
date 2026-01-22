@@ -1,10 +1,7 @@
 -- @description Smart Create Track
 -- @author Julius Kukla
 -- @version 0.0.0
--- @about
---
---	This script is used to make a track at any depth level after the selected track
---
+-- @about This script is used to make a track at any depth level after the selected track
 --	Situations:
 --		If no tracks is selected = create a track at the end of the track count
 --		
