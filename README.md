@@ -13,3 +13,9 @@ local jk = require "jk_api"
 ```
 
 Once the main module is loaded you can use the helper functions in the "**Load**" section of **jk_api.lua** to load the other, specific modules.
+
+# Installing
+You can install this repo in ReaPack using the following index file:
+```
+https://github.com/jkooks/jk_reascripts/raw/main/index.xml
+```
