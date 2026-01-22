@@ -1,57 +1,9 @@
--- @description Extend Trim Top Within Bounds
--- @about Extends and trims left edge of the next clip on the selected track if the item isn't shorter/longer than what you want to trim it to
+-- @description Extend Trim Tail Within Bounds
+-- @about Extends and trims right edge of the previous clip on the selected track if the item isn't shorter/longer than what you want to trim it to
+-- Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
 -- @provide items/extend-trim/jk_extend_trim_options.lua
-
---gets the envelope points
-function GetEnvelopePos(take)
-	local envelopes = {}
-
-	local index = 0
-	while true do
-		local thisEnvelope = reaper.GetTakeEnvelope(take, index)
-		if thisEnvelope then
-			local points = {}
-			local pointCount = reaper.CountEnvelopePoints(thisEnvelope)
-
-			local retval
-			for i = 0, pointCount - 1 do
-				retval, points[i] = reaper.GetEnvelopePoint(thisEnvelope, i)
-			end
-
-			envelopes[index] = {
-				envelope = thisEnvelope,
-				name = reaper.GetEnvelopeName(thisEnvelope),
-				point_count = pointCount,
-				points = points,
-			}
-
-			index = index + 1
-		else
-			break
-		end
-	end
-
-	return envelopes, index
-end
-
-
---sets a the envelope points
-function SetEnvelopePos(envelopes, count, lenDif)
-	for i = 0, count - 1 do
-		local thisEnvelope = envelopes[i].envelope
-		local pointCount = envelopes[i].point_count
-		local points = envelopes[i].points
-
-		for j = pointCount - 1, 0, -1 do
-			reaper.SetEnvelopePoint(thisEnvelope, j, points[j] + lenDif , nil, nil, nil, nil, true)
-		end
-
-		reaper.Envelope_SortPoints(thisEnvelope)
-	end
-end
-
 
 -----------------
 ----Main Code----
@@ -67,7 +19,7 @@ end
 
 --makes sure the mouse cursor is over the arrange view
 local cursorPos = reaper.BR_PositionAtMouseCursor(false)
-if cursorPos == -1 then
+if cursorPos == -1 then 
 	reaper.defer(function() end)
 	return
 end
@@ -81,7 +33,7 @@ local snapState = reaper.GetToggleCommandState(1157) --Options: Toggle snapping
 if snapState == 1 then cursorPos = reaper.SnapToGrid(0, cursorPos) end
 
 --get minimum fade value
-local minFade = tonumber(reaper.GetExtState('extend-trim', 'topFade'))
+local minFade = tonumber(reaper.GetExtState('extend-trim', 'tailFade'))
 if not minFade then minFade = 0 end
 
 --get if the user wants extension to be a thing
@@ -108,52 +60,25 @@ if editItem then
 	for i = 0, itemNum - 1 do
 		local thisItem = reaper.GetSelectedMediaItem(0, i)
 
-		local itemStart = reaper.GetMediaItemInfo_Value(thisItem, "D_POSITION")
 		local itemLen = reaper.GetMediaItemInfo_Value(thisItem, "D_LENGTH")
-		local itemEnd = itemStart + itemLen
+		local itemEnd = reaper.GetMediaItemInfo_Value(thisItem, "D_POSITION") + reaper.GetMediaItemInfo_Value(thisItem, "D_LENGTH")
 
-		if itemStart < cursorPos then
-			local editDif = cursorPos - itemStart
+		if itemEnd > cursorPos then
+			local editDif = itemEnd - cursorPos
 			local newLen = itemLen - editDif
 
-			reaper.SetMediaItemInfo_Value(thisItem, "D_POSITION", cursorPos)
 			reaper.SetMediaItemInfo_Value(thisItem, "D_LENGTH", newLen)
 
-
 			--changes the fade length to make sure it isn't lower than a one frame length
-			local fadeLen = reaper.GetMediaItemInfo_Value(thisItem, "D_FADEINLEN")
+			local fadeLen = reaper.GetMediaItemInfo_Value(thisItem, "D_FADEOUTLEN")
 			local newFadeLen = fadeLen - editDif
 			if newFadeLen < minFade then newFadeLen = minFade end
-			reaper.SetMediaItemInfo_Value(thisItem, "D_FADEINLEN", newFadeLen)
+			reaper.SetMediaItemInfo_Value(thisItem, "D_FADEOUTLEN", newFadeLen)
 
-
-			--gets rid of snap offset values cause
+			--gsets rid of snap offset values
 			local snapOffset = reaper.GetMediaItemInfo_Value(thisItem, "D_SNAPOFFSET")
 			if snapOffset ~= 0 then
 				reaper.SetMediaItemInfo_Value(thisItem, "D_SNAPOFFSET", 0)
-			end
-
-
-			--goes through takes to make sure points are in line
-			local takeNumber = reaper.CountTakes(thisItem)
-			for j = 0, takeNumber - 1 do
-				local thisTake = reaper.GetMediaItemTake(thisItem, j)
-				local offsetValue = reaper.GetMediaItemTakeInfo_Value(thisTake, "D_STARTOFFS")
-				local playRate = reaper.GetMediaItemTakeInfo_Value(thisTake, "D_PLAYRATE")
-
-				local sourceLen = reaper.GetMediaSourceLength(reaper.GetMediaItemTake_Source(thisTake))
-
-				local envelopes, envCount = GetEnvelopePos(thisTake)
-
-				local newOffset = offsetValue + (editDif * playRate)
-				if sourceLen - newOffset < 0 then
-					newOffset = -(sourceLen - newOffset) --resets the source offset if the item goes past the loop point
-				end
-
-
-				reaper.SetMediaItemTakeInfo_Value(thisTake, "D_STARTOFFS", newOffset)
-
-				if envelopes then SetEnvelopePos(envelopes, envCount, -(editDif*playRate)) end
 			end
 		end
 	end
@@ -168,10 +93,11 @@ elseif isExtend then
 	itemNum = reaper.CountTrackMediaItems(thisTrack)
 	for i = 0, itemNum - 1 do
 		local thisItem = reaper.GetTrackMediaItem(thisTrack, i)
-		local thisPos = reaper.GetMediaItemInfo_Value(thisItem, "D_POSITION")
+		local thisEnd = reaper.GetMediaItemInfo_Value(thisItem, "D_POSITION") + reaper.GetMediaItemInfo_Value(thisItem, "D_LENGTH")
 
-		if thisPos >= cursorPos then
+		if thisEnd <= cursorPos then
 			editItem = thisItem
+		else
 			break
 		end
 	end
@@ -197,56 +123,25 @@ elseif isExtend then
 	for i = 0, itemNum - 1 do
 		local thisItem = reaper.GetSelectedMediaItem(0, i)
 
-		local itemStart = reaper.GetMediaItemInfo_Value(thisItem, "D_POSITION")
 		local itemLen = reaper.GetMediaItemInfo_Value(thisItem, "D_LENGTH")
-		local itemEnd = itemStart + itemLen
+		local itemEnd = reaper.GetMediaItemInfo_Value(thisItem, "D_POSITION") + itemLen
 
-		if itemStart > cursorPos then
-			local isLoop = reaper.GetMediaItemInfo_Value(thisItem, "B_LOOPSRC")
-
-			local editDif = itemStart - cursorPos
+		if itemEnd < cursorPos then
+			local editDif = cursorPos - itemEnd
 			local newLen = itemLen + editDif
 
-			reaper.SetMediaItemInfo_Value(thisItem, "D_POSITION", cursorPos)
 			reaper.SetMediaItemInfo_Value(thisItem, "D_LENGTH", newLen)
 
 			--changes the fade length to make sure it isn't lower than a one frame length
-			local fadeLen = reaper.GetMediaItemInfo_Value(thisItem, "D_FADEINLEN")
+			local fadeLen = reaper.GetMediaItemInfo_Value(thisItem, "D_FADEOUTLEN")
 			local newFadeLen = fadeLen + editDif
 			if newFadeLen < minFade then newFadeLen = minFade end
-			reaper.SetMediaItemInfo_Value(thisItem, "D_FADEINLEN", newFadeLen)
+			reaper.SetMediaItemInfo_Value(thisItem, "D_FADEOUTLEN", newFadeLen)
 
 			--gets rid of snap offset values
 			local snapOffset = reaper.GetMediaItemInfo_Value(thisItem, "D_SNAPOFFSET")
 			if snapOffset ~= 0 then
 				reaper.SetMediaItemInfo_Value(thisItem, "D_SNAPOFFSET", 0)
-			end
-
-			--changes take offsets and makes suer that the envelope points will stay where they need to
-			local takeNumber = reaper.CountTakes(thisItem)
-			for j = 0, takeNumber - 1 do
-				local thisTake = reaper.GetMediaItemTake(thisItem, j)
-
-				local envelopes, envCount = GetEnvelopePos(thisTake)
-
-				local playRate = reaper.GetMediaItemTakeInfo_Value(thisTake, "D_PLAYRATE")
-				local offsetValue = reaper.GetMediaItemTakeInfo_Value(thisTake, "D_STARTOFFS")
-
-				local newOffset = offsetValue - (editDif * playRate)
-				local thisSource = reaper.GetMediaItemTake_Source(thisTake)
-				local sourceLen = reaper.GetMediaSourceLength(thisSource)
-
-				--changes the offset if the source is being looped (itemLen > sourceLen)
-				if newOffset < 0 and isLoop == 1 then
-					local repetitions = 1
-					if newOffset < -sourceLen then repetitions = -(newOffset//sourceLen) end
-
-					newOffset = (sourceLen * repetitions) + newOffset
-				end
-
-				reaper.SetMediaItemTakeInfo_Value(thisTake, "D_STARTOFFS", newOffset)
-
-				if envelopes then SetEnvelopePos(envelopes, envCount, editDif * playRate) end
 			end
 		end
 	end
@@ -257,9 +152,10 @@ end
 local startFrame, endFrame = reaper.GetSet_ArrangeView2(0, false, 0, 0) --gets the frames that are in view
 
 local totalFrame = endFrame - startFrame
-local screenPerc = (totalFrame * 0.03) --% of the screen you want to account for
+local screenPerc = totalFrame * 0.03 --% of the screen you want to account for
 local resetEnd = endFrame - screenPerc
 local resetStart = startFrame + screenPerc
+
 
 --moves the screen/frames up if the cursor is wihtin the last (right side) 3% of the screen
 if cursorPos > resetEnd then
@@ -270,7 +166,7 @@ if cursorPos > resetEnd then
 
 	local newStartFrame, newEndFrame = reaper.GetSet_ArrangeView2(0, true, 0, 0, startFrame, endFrame)
 
---moves the screen/frames down if the cursor is wihtin the beginning (left side) 3% of the screen
+--moves the screen/frames down if the cursor is wihtin the beginning (right side) 3% of the screen
 elseif cursorPos < resetStart then
 	local newValue = (startFrame + screenPerc) - cursorPos --abundance of math is so it shifts the view more if you are closer to the frame limit
 
@@ -279,6 +175,7 @@ elseif cursorPos < resetStart then
 	
 	local newStartFrame, newEndFrame = reaper.GetSet_ArrangeView2(0, true, 0, 0, startFrame, endFrame)	
 end
+
 
 
 --clean up code
@@ -291,6 +188,7 @@ end
 
 reaper.SetEditCurPos(cursorPos, false, false) --sets the cursor positions to wherever it should be
 
-
 reaper.PreventUIRefresh(-1)
-if isTrim then reaper.Undo_EndBlock("Trim Top (Within Bounds)", -1) else reaper.Undo_EndBlock("Extend Top (Within Bounds)", -1) end
+reaper.UpdateArrange()
+
+if isTrim then reaper.Undo_EndBlock("Trim Tail (Within Bounds)", -1) else reaper.Undo_EndBlock("Extend Tail (Within Bounds)", -1) end

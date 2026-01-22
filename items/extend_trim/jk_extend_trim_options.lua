@@ -1,5 +1,6 @@
 -- @description Extend Trim Options
 -- @about Saves options for the Extend-Trim scripts
+-- Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
 -- @noindex
