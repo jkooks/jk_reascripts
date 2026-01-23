@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="3bf665ffa9ebe815373ff81613cc8524a3be3a8c">
+<index version="1" name="jk_reascripts" commit="45a3051c0463c4927878a8bdcf48f3e9884a8254">
   <category name="fx/downmixer">
     <reapack name="downmix_metapackage.txt" type="midinotenames" desc="Downmix Plugin Scripts">
       <metadata>
@@ -16,74 +16,6 @@
         <source file="jk_downmix_selected_takes_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
         <source file="jk_downmix_selected_tracks_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
         <source file="jk_downmix_selected_tracks_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_downmix_selected_takes_to_mono.lua" type="script" desc="Downmix Selected Takes To Mono">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Adds the Downmixer plugin to the selected takes and downmixes them to mono Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T15:51:41Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/8361c2165e0248dd91b825542ccab1439a60baf8/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
-      </version>
-      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:28:59Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/3bf665ffa9ebe815373ff81613cc8524a3be3a8c/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_downmix_selected_takes_to_stereo.lua" type="script" desc="Downmix Selected Takes To Stereo">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Adds the Downmixer plugin to the selected takes and downmixes them to stereo Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T15:51:41Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/8361c2165e0248dd91b825542ccab1439a60baf8/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
-      </version>
-      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:28:59Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/3bf665ffa9ebe815373ff81613cc8524a3be3a8c/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_downmix_selected_tracks_to_mono.lua" type="script" desc="Downmix Selected Tracks To Mono">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Adds the Downmixer plugin to the selected tracks and downmixes them to mono Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T15:51:41Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/8361c2165e0248dd91b825542ccab1439a60baf8/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
-      </version>
-      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:28:59Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/3bf665ffa9ebe815373ff81613cc8524a3be3a8c/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_downmix_selected_tracks_to_stereo.lua" type="script" desc="Downmix Selected Tracks To Stereo">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Adds the Downmixer plugin to the selected tracks and downmixes them to stereo Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T15:51:41Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/8361c2165e0248dd91b825542ccab1439a60baf8/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
-      </version>
-      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:28:59Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/3bf665ffa9ebe815373ff81613cc8524a3be3a8c/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
       </version>
     </reapack>
   </category>
@@ -158,6 +90,24 @@
       </metadata>
       <version name="0.0.0" author="Julius Kukla" time="2026-01-22T16:35:53Z">
         <source main="main">https://github.com/jkooks/jk_reascripts/raw/331c7f6505405b757e3f9bba60313382ae9c3e9f/items/extend_trim/jk_extend_trim_top_within_bounds.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="jk_api">
+    <reapack name="jk_api.lua" type="script" desc="Utility API Modules">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Extended API module for everyday use Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
+}
+]]></description>
+      </metadata>
+      <version name="0.0.0" author="Julius Kukla" time="2026-01-23T07:39:12Z">
+        <source>https://github.com/jkooks/jk_reascripts/raw/45a3051c0463c4927878a8bdcf48f3e9884a8254/jk_api/jk_api.lua</source>
+        <source file="modules/jk_fx_api.lua">https://github.com/jkooks/jk_reascripts/raw/45a3051c0463c4927878a8bdcf48f3e9884a8254/jk_api/modules/jk_fx_api.lua</source>
+        <source file="modules/jk_json_api.lua">https://github.com/jkooks/jk_reascripts/raw/45a3051c0463c4927878a8bdcf48f3e9884a8254/jk_api/modules/jk_json_api.lua</source>
       </version>
     </reapack>
   </category>
