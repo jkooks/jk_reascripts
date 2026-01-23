@@ -5,8 +5,8 @@
 -- @version 0.0.0
 -- @provides
 -- 		[nomain] .
--- 		[nomain] $path/modules/*.lua
--- 		$path/modules/*.lua
+-- 		[nomain] jk_api/modules/*.lua
+-- 		jk_api/modules/*.lua
 
 --[[
 	To import this extended API into a file, copy the below code:
