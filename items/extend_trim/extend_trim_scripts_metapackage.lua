@@ -1,17 +1,16 @@
 -- @description Extend Trim Scripts
 -- @about Scripts used to extend/trim items easily.
---      Distributed under the GNU GPL v3 License. See license.txt for more information.
+--	 Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author jkooks
 -- @version 0.0.0
 -- @link https://github.com/jkooks/jk_reascripts
 -- @metapackage
 -- @provides
---		[nomain] .
---      [main] jk_extend_trim_options.lua
---      [main] jk_extend_trim_left_edge_no_fade.lua
---      [main] jk_extend_trim_right_edge_no_fade.lua
---      [main] jk_extend_trim_tail_within_bounds.lua
---      [main] jk_extend_trim_top_within_bounds.lua
+--	 [main] jk_extend_trim_options.lua
+--	 [main] jk_extend_trim_left_edge_no_fade.lua
+--	 [main] jk_extend_trim_right_edge_no_fade.lua
+--	 [main] jk_extend_trim_tail_within_bounds.lua
+--	 [main] jk_extend_trim_top_within_bounds.lua
 
 
 do return end -- ignore me - random code to make reapack-index pick up chanegs with the header
