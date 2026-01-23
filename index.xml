@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="45a3051c0463c4927878a8bdcf48f3e9884a8254">
+<index version="1" name="jk_reascripts" commit="401c1ab0413d8e9246ca90f2686a4a530ca2de1e">
   <category name="fx/downmixer">
-    <reapack name="downmix_metapackage.txt" type="midinotenames" desc="Downmix Plugin Scripts">
+    <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmix Plugin Scripts">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -11,11 +11,11 @@
 }
 ]]></description>
       </metadata>
-      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:22:21Z">
-        <source file="jk_downmix_selected_takes_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
-        <source file="jk_downmix_selected_takes_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
-        <source file="jk_downmix_selected_tracks_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
-        <source file="jk_downmix_selected_tracks_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/ed5223944fd2243fd2196ca926a4b038305a2caf/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
+      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:43:46Z">
+        <source main="main" file="jk_downmix_selected_takes_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
+        <source main="main" file="jk_downmix_selected_takes_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
+        <source main="main" file="jk_downmix_selected_tracks_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
+        <source main="main" file="jk_downmix_selected_tracks_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
       </version>
     </reapack>
   </category>
