@@ -1,6 +1,5 @@
 -- @description Utility API Modules
--- @about
---		Extended general API module
+-- @about Extended API module for everyday use
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
