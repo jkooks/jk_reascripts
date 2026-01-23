@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="401c1ab0413d8e9246ca90f2686a4a530ca2de1e">
+<index version="1" name="jk_reascripts" commit="1776cdcf89fe6ca79fe99176f983672b185057c7">
   <category name="fx/downmixer">
-    <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmix Plugin Scripts">
+    <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmixer Scripts">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -10,6 +10,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 Scripts that add the Downmixer plugin to either selected tracks or takes. Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
 }
 ]]></description>
+        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
       </metadata>
       <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:43:46Z">
         <source main="main" file="jk_downmix_selected_takes_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
@@ -26,9 +27,10 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This script sorts all selected items equally in the time selection\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script sorts all selected items equally in the time selection Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
 }
 ]]></description>
+        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
       </metadata>
       <version name="0.0.0" author="Julius Kukla" time="2026-01-22T15:51:41Z">
         <source main="main">https://github.com/jkooks/jk_reascripts/raw/8361c2165e0248dd91b825542ccab1439a60baf8/items/jk_reposition_items_equally_in_time_selection.lua</source>
@@ -36,60 +38,23 @@
     </reapack>
   </category>
   <category name="items/extend_trim">
-    <reapack name="jk_extend_trim_left_edge_no_fade.lua" type="script" desc="Extend Trim Left Edge No Fade">
+    <reapack name="extend_trim_scripts_metapackage.lua" type="script" desc="Extend Trim Scripts">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 Extends and trims left edge of the next clip on the selected track\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Scripts used to extend/trim items easily. Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
 }
 ]]></description>
+        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
       </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T16:35:53Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/331c7f6505405b757e3f9bba60313382ae9c3e9f/items/extend_trim/jk_extend_trim_left_edge_no_fade.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_extend_trim_right_edge_no_fade.lua" type="script" desc="Extend Trim Right Edge No Fade">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Extends and trims right edge of the previous clip on the selected track\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T16:35:53Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/331c7f6505405b757e3f9bba60313382ae9c3e9f/items/extend_trim/jk_extend_trim_right_edge_no_fade.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_extend_trim_tail_within_bounds.lua" type="script" desc="Extend Trim Tail Within Bounds">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Extends and trims right edge of the previous clip on the selected track if the item isn't shorter/longer than what you want to trim it to\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T16:35:53Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/331c7f6505405b757e3f9bba60313382ae9c3e9f/items/extend_trim/jk_extend_trim_tail_within_bounds.lua</source>
-      </version>
-    </reapack>
-    <reapack name="jk_extend_trim_top_within_bounds.lua" type="script" desc="Extend Trim Top Within Bounds">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Extends and trims left edge of the next clip on the selected track if the item isn't shorter/longer than what you want to trim it to\par}
-}
-]]></description>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-22T16:35:53Z">
-        <source main="main">https://github.com/jkooks/jk_reascripts/raw/331c7f6505405b757e3f9bba60313382ae9c3e9f/items/extend_trim/jk_extend_trim_top_within_bounds.lua</source>
+      <version name="0.0.0" author="Julius Kukla" time="2026-01-23T08:01:47Z">
+        <source main="main" file="jk_extend_trim_options.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_options.lua</source>
+        <source main="main" file="jk_extend_trim_left_edge_no_fade.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_left_edge_no_fade.lua</source>
+        <source main="main" file="jk_extend_trim_right_edge_no_fade.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_right_edge_no_fade.lua</source>
+        <source main="main" file="jk_extend_trim_tail_within_bounds.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_tail_within_bounds.lua</source>
+        <source main="main" file="jk_extend_trim_top_within_bounds.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_top_within_bounds.lua</source>
       </version>
     </reapack>
   </category>
@@ -103,6 +68,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 Extended API module for everyday use Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
 }
 ]]></description>
+        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
       </metadata>
       <version name="0.0.0" author="Julius Kukla" time="2026-01-23T07:39:12Z">
         <source>https://github.com/jkooks/jk_reascripts/raw/45a3051c0463c4927878a8bdcf48f3e9884a8254/jk_api/jk_api.lua</source>
@@ -118,9 +84,10 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This script is used to make a track at any depth level after the selected track\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script is used to make a track at any depth level after the selected track Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
 }
 ]]></description>
+        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
       </metadata>
       <version name="0.0.0" author="Julius Kukla" time="2026-01-22T21:33:58Z">
         <source main="main">https://github.com/jkooks/jk_reascripts/raw/0d4124fb1b37fc0a5e05433b53468f84659a0a94/tracks/jk_smart_create_track.lua</source>
