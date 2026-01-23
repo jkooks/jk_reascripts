@@ -1,7 +1,7 @@
 -- @description Extend Trim Right Edge No Fade
 -- @about Extends and trims right edge of the previous clip on the selected track 
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
--- @author Julius Kukla
+-- @author jkooks
 -- @version 0.0.0
 -- @link https://github.com/jkooks/jk_reascripts
 -- @noindex

@@ -1,7 +1,7 @@
 -- @description Extend Trim Top Within Bounds
 -- @about Extends and trims left edge of the next clip on the selected track if the item isn't shorter/longer than what you want to trim it to
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
--- @author Julius Kukla
+-- @author jkooks
 -- @version 0.0.0
 -- @link https://github.com/jkooks/jk_reascripts
 -- @noindex

@@ -1,18 +1,14 @@
 -- @description Utility API Modules
 -- @about Extended API module for everyday use
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
---
 --		## Using the API
 -- 		To import this extended API into a file, copy the below code:
---
 -- 		'''
 -- 		package.path = reaper.GetResourcePath() .. "/Scripts/jk_reascripts/jk_api/?.lua"
 -- 		local jk = require "jk_api"
 -- 		'''
---
 -- 		For any additional modules, please load them using the helper functions (see Loading section below).
---
--- @author Julius Kukla
+-- @author jkooks
 -- @version 0.0.0
 -- @link https://github.com/jkooks/jk_reascripts
 -- @provides

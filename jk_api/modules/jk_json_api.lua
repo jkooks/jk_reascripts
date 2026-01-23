@@ -1,7 +1,7 @@
 -- @description Utility JSON API
 -- @about Extended API module that deals with JSON files
 --      Distributed under the GNU GPL v3 License. See license.txt for more information.
--- @author Julius Kukla
+-- @author jkooks
 -- @version 0.0.0
 -- @link https://github.com/jkooks/jk_reascripts
 -- @noindex

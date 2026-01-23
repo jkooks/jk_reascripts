@@ -1,8 +1,8 @@
 -- @description Reposition Items Equally In Time Selection
 -- @about This script sorts all selected items equally in the time selection
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
--- @author Julius Kukla
--- @version 0.0.0
+-- @author jkooks
+-- @version 0.0.1
 -- @link https://github.com/jkooks/jk_reascripts
 
 
@@ -17,7 +17,6 @@ function Msg(...)
 
 	return message
 end
-
 
 --sorts the array given to it by whatever key value you provide
 function SortTableByKey(temp_array, key)
@@ -40,7 +39,6 @@ function SortTableByKey(temp_array, key)
 	return temp_array
 end
 
-
 function InTable(item, temp_table)
 	for i, info in ipairs(temp_table) do
 		if info["item"] == item then
@@ -50,10 +48,6 @@ function InTable(item, temp_table)
 
 	return false
 end
-
-
-
-
 
 function Main()
 
@@ -84,7 +78,10 @@ function Main()
 
 	items = SortTableByKey(items, "position")
 
-	local start_position, end_position = reaper.GetSet_LoopTimeRange(false, false, 0, 0, false)
+	local start_position ---@type number|nil
+	local end_position ---@type number|nil
+
+	start_position, end_position = reaper.GetSet_LoopTimeRange(false, false, 0, 0, false)
 
 	if start_position == end_position then
 		start_position = nil
@@ -101,12 +98,11 @@ function Main()
 
 	for i, info in ipairs(items) do
 		reaper.SetMediaItemInfo_Value(info["item"], "D_POSITION", position)
-		
+
 		info["new_position"] = position
 
 		position = position + info["length"] + offset
 	end
-
 
 	--reposition any grouped items if you want it to
 	if reposition_group then
@@ -148,6 +144,5 @@ function Main()
 
 	return true
 end
-
 
 Main()

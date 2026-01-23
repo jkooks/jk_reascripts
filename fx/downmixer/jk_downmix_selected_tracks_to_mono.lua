@@ -1,7 +1,7 @@
 -- @description Downmix Selected Tracks To Mono
 -- @about Adds the Downmixer plugin to the selected tracks and downmixes them to mono.
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
--- @author Julius Kukla
+-- @author jkooks
 -- @version 0.0.1
 -- @link https://github.com/jkooks/jk_reascripts
 -- @noindex

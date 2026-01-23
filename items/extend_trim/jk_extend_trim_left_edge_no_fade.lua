@@ -1,7 +1,7 @@
 -- @description Extend Trim Left Edge No Fade
 -- @about Extends and trims left edge of the next clip on the selected track
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
--- @author Julius Kukla
+-- @author jkooks
 -- @version 0.0.0
 -- @link https://github.com/jkooks/jk_reascripts
 -- @noindex
