@@ -6,8 +6,10 @@
 -- @link https://github.com/jkooks/jk_reascripts
 -- @metapackage
 -- @provides
---	 [main] jk_extend_trim_options.lua
---	 [main] jk_extend_trim_left_edge_no_fade.lua
---	 [main] jk_extend_trim_right_edge_no_fade.lua
---	 [main] jk_extend_trim_tail_within_bounds.lua
---	 [main] jk_extend_trim_top_within_bounds.lua
+--		[main] jk_extend_trim_options.lua
+--		[main] jk_extend_trim_left_edge_no_fade.lua
+--		[main] jk_extend_trim_right_edge_no_fade.lua
+--		[main] jk_extend_trim_tail_within_bounds.lua
+--		[main] jk_extend_trim_top_within_bounds.lua
+
+do return end
