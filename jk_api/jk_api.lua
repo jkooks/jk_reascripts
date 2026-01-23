@@ -4,9 +4,8 @@
 -- @author Julius Kukla
 -- @version 0.0.0
 -- @noindex
--- @provides
---	[nomain] .
---	jk_api/modules/*.lua
+-- @provides [nomain] .
+-- @provides jk_api/modules/*.lua
 
 --[[
 	To import this extended API into a file, copy the below code:

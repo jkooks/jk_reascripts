@@ -2,10 +2,9 @@
 -- @about Extended API module that deals with FXs
 -- Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Kukla
--- @version 0.0.0
+-- @version 0.0.1
 -- @noindex
--- @provides
---	[nomain] .
+-- @provides [nomain] .
 
 -- make sure JK API is loaded
 package.path = reaper.GetResourcePath() .. "/Scripts/jk_reascripts/jk_api/?.lua"
@@ -101,18 +100,6 @@ function jk_fx.GetDownmixerFXIndex(pointer)
 	end
 
 	return -1
-end
-
----Get a mono I/O routing map
----@return ChannelMap
-function jk_fx.GetOutputChannelMapMono()
-	return {jk_fx.ChannelsToFlag(1)}
-end
-
----Get a stereo I/O routing map
----@return ChannelMap
-function jk_fx.GetOutputChannelMapStereo()
-	return {jk_fx.ChannelsToFlag(1), jk_fx.ChannelsToFlag(2)}
 end
 
 ---Checks to see if an instance of the Downmixer plugin exists on the track or take

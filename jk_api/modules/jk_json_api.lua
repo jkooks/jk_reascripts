@@ -4,8 +4,7 @@
 -- @author Julius Kukla
 -- @version 0.0.0
 -- @noindex
--- @provides
---	[nomain] .
+-- @provides [nomain] .
 
 
 --[[
