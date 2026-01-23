@@ -5,8 +5,9 @@
 -- @version 0.0.1
 -- @link https://github.com/jkooks/jk_reascripts
 -- @metapackage
--- @provides
---		[main] jk_downmix_selected_takes_to_mono.lua
---		[main] jk_downmix_selected_takes_to_stereo.lua
---		[main] jk_downmix_selected_tracks_to_mono.lua
---		[main] jk_downmix_selected_tracks_to_stereo.lua
+-- @provides [main] jk_downmix_selected_takes_to_mono.lua
+--	[main] jk_downmix_selected_takes_to_stereo.lua
+--	[main] jk_downmix_selected_tracks_to_mono.lua
+--	[main] jk_downmix_selected_tracks_to_stereo.lua
+
+do return end
