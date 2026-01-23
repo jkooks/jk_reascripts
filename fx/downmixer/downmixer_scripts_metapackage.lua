@@ -10,6 +10,3 @@
 --	 [main] jk_downmix_selected_takes_to_stereo.lua
 --	 [main] jk_downmix_selected_tracks_to_mono.lua
 --	 [main] jk_downmix_selected_tracks_to_stereo.lua
-
-
-do return end -- ignore me - random code to make reapack-index pick up chanegs with the header
