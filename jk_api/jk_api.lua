@@ -1,11 +1,13 @@
--- @description API for JK Scripts
--- @about Main extended API module
--- Distributed under the GNU GPL v3 License. See license.txt for more information.
+-- @description Utility API Modules
+-- @about
+--		Extended general API module
+-- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
--- @noindex
--- @provides [nomain] .
--- @provides jk_api/modules/*.lua
+-- @provides
+-- 		[nomain] .
+-- 		[nomain] $path/modules/*.lua
+-- 		$path/modules/*.lua
 
 --[[
 	To import this extended API into a file, copy the below code:
