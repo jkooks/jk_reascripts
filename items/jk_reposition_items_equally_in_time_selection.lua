@@ -1,8 +1,9 @@
 -- @description Reposition Items Equally In Time Selection
 -- @about This script sorts all selected items equally in the time selection
--- Distributed under the GNU GPL v3 License. See license.txt for more information.
+-- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
+-- @link https://github.com/jkooks/jk_reascripts
 
 
 function Msg(...)

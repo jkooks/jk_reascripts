@@ -14,6 +14,7 @@
 --
 -- @author Julius Kukla
 -- @version 0.0.0
+-- @link https://github.com/jkooks/jk_reascripts
 -- @provides
 -- 		[nomain] .
 -- 		modules/*.lua

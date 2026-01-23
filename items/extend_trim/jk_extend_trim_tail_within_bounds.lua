@@ -1,9 +1,11 @@
 -- @description Extend Trim Tail Within Bounds
--- @about Extends and trims right edge of the previous clip on the selected track if the item isn't shorter/longer than what you want to trim it to
--- Distributed under the GNU GPL v3 License. See license.txt for more information.
+-- @about Extends and trims right edge of the previous clip on the selected track if the item isn't shorter/longer than what you want to trim it to.
+-- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
--- @provide items/extend-trim/jk_extend_trim_options.lua
+-- @link https://github.com/jkooks/jk_reascripts
+-- @noindex
+
 
 -----------------
 ----Main Code----

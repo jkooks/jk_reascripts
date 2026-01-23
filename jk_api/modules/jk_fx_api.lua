@@ -3,6 +3,7 @@
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Kukla
 -- @version 0.0.1
+-- @link https://github.com/jkooks/jk_reascripts
 -- @noindex
 -- @provides [nomain] .
 

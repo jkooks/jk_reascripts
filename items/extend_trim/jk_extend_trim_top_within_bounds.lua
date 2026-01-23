@@ -1,9 +1,10 @@
 -- @description Extend Trim Top Within Bounds
 -- @about Extends and trims left edge of the next clip on the selected track if the item isn't shorter/longer than what you want to trim it to
--- Distributed under the GNU GPL v3 License. See license.txt for more information.
+-- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.0
--- @provide items/extend-trim/jk_extend_trim_options.lua
+-- @link https://github.com/jkooks/jk_reascripts
+-- @noindex
 
 --gets the envelope points
 function GetEnvelopePos(take)
