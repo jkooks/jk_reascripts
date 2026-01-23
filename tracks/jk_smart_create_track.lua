@@ -30,7 +30,6 @@ function GetDepth(track)
 	return depth
 end
 
-
 --creates the tracks based off of the tracks that are selected
 function AddTrack()
 	local selected_count = reaper.CountSelectedTracks(0)
@@ -57,8 +56,8 @@ function AddTrack()
 	local new_track = reaper.GetTrack(0, last_index)
 
 	--optional:
-	reaper.SetTrackSelected(new_track, true) --if you want the new track to also be selected
-	-- reaper.SetOnlyTrackSelected(new_track) --if you want the new track to be only track selected
+	reaper.SetTrackSelected(new_track, true) -- if you want the new track to also be selected
+	-- reaper.SetOnlyTrackSelected(new_track) -- if you want the new track to be only track selected
 	-- reaper.SetTrackColor(new_track, reaper.ColorToNative(math.random(0, 255), math.random(0, 255), math.random(0, 255))) --if you want color to be random
 
 	--makes new tracks foldered tracks if more than one track was originally seleceted and the last track is the end of the folder
@@ -92,7 +91,6 @@ function AddTrack()
 
 	return new_track
 end
-
 
 function Main()
 	reaper.Undo_BeginBlock()

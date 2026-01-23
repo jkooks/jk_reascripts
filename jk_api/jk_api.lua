@@ -258,7 +258,4 @@ end
 -- ON IMPORT --
 ---------------
 
--- This section is contains tasks that need to run when the file is imported.
--- These tasks should be rare and only need to be run once per import.
-
 return jk -- return the module at the end of the file for use
