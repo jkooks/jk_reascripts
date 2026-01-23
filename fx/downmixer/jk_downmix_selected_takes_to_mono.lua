@@ -3,6 +3,7 @@
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author Julius Kukla
 -- @version 0.0.1
+-- @noindex
 
 -- load APIs
 package.path = reaper.GetResourcePath() .. "/Scripts/jk_reascripts/jk_api/?.lua"

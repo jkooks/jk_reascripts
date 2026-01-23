@@ -16,7 +16,7 @@
 -- @version 0.0.0
 -- @provides
 -- 		[nomain] .
--- 		jk_api/modules/*.lua
+-- 		modules/*.lua
 
 
 local jk = {}
