@@ -9,7 +9,7 @@
 -- 		'''
 -- 		For any additional modules, please load them using the helper functions (see Loading section below).
 -- @author jkooks
--- @version 0.0.0
+-- @version 0.0.1
 -- @link https://github.com/jkooks/jk_reascripts
 -- @provides
 -- 		[nomain] .
@@ -135,16 +135,16 @@ function jk.IsDir(path)
         path = path:sub(1, path:len() - 1)
     end
 
-    local parent, name = path:match("(.+)/(.+)")
+    local directory, name = path:match("(.+)/(.+)")
 
     -- check if there is a folder with the same name in the parent folder
-    if parent and name then
-        reaper.EnumerateSubdirectories(parent, -1) -- reset the cache
+    if directory and name then
+        reaper.EnumerateSubdirectories(directory, -1) -- reset the cache
 
         local index = 0
 
         while true do
-            local subdirectory = reaper.EnumerateSubdirectories(parent, index)
+            local subdirectory = reaper.EnumerateSubdirectories(directory, index)
 
             if subdirectory == name then
                 return true

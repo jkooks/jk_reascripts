@@ -1,6 +1,6 @@
 -- @description Smart Create Track
 -- @author jkooks
--- @version 0.0.0
+-- @version 0.0.1
 -- @about This script is used to make a track at any depth level after the selected track
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 --		# Situations
@@ -35,7 +35,9 @@ function AddTrack()
 	local selected_count = reaper.CountSelectedTracks(0)
 	local total_count = reaper.CountTracks(0)
 
-	local last_track, first_track, next_track
+	local last_track	---@type MediaTrack|nil
+	local first_track	---@type MediaTrack|nil
+	local next_track	---@type MediaTrack|nil
 
 	if selected_count > 0 then
 		last_track = reaper.GetSelectedTrack(0, selected_count - 1) --grabs last track if you are adding it below and there are multiple tracks selected
