@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="2ec9f8f9c14023ceb93f8650a3f8aa336a9512da">
+<index version="1" name="jk_reascripts" commit="e3dab1bb45595b12c8b1cfe60b084d639a824dcb">
   <category name="fx/downmixer">
     <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmixer Scripts">
       <metadata>
@@ -78,6 +78,11 @@
         <source file="modules/jk_fx_api.lua">https://github.com/jkooks/jk_reascripts/raw/45a3051c0463c4927878a8bdcf48f3e9884a8254/jk_api/modules/jk_fx_api.lua</source>
         <source file="modules/jk_json_api.lua">https://github.com/jkooks/jk_reascripts/raw/45a3051c0463c4927878a8bdcf48f3e9884a8254/jk_api/modules/jk_json_api.lua</source>
       </version>
+      <version name="0.0.1" author="jkooks" time="2026-01-23T16:03:11Z">
+        <source>https://github.com/jkooks/jk_reascripts/raw/e3dab1bb45595b12c8b1cfe60b084d639a824dcb/jk_api/jk_api.lua</source>
+        <source file="modules/jk_fx_api.lua">https://github.com/jkooks/jk_reascripts/raw/e3dab1bb45595b12c8b1cfe60b084d639a824dcb/jk_api/modules/jk_fx_api.lua</source>
+        <source file="modules/jk_json_api.lua">https://github.com/jkooks/jk_reascripts/raw/e3dab1bb45595b12c8b1cfe60b084d639a824dcb/jk_api/modules/jk_json_api.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="tracks">
@@ -94,6 +99,9 @@
       </metadata>
       <version name="0.0.0" author="Julius Kukla" time="2026-01-22T21:33:58Z">
         <source main="main">https://github.com/jkooks/jk_reascripts/raw/0d4124fb1b37fc0a5e05433b53468f84659a0a94/tracks/jk_smart_create_track.lua</source>
+      </version>
+      <version name="0.0.1" author="jkooks" time="2026-01-23T16:03:11Z">
+        <source main="main">https://github.com/jkooks/jk_reascripts/raw/e3dab1bb45595b12c8b1cfe60b084d639a824dcb/tracks/jk_smart_create_track.lua</source>
       </version>
     </reapack>
   </category>
