@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="1776cdcf89fe6ca79fe99176f983672b185057c7">
+<index version="1" name="jk_reascripts" commit="2ec9f8f9c14023ceb93f8650a3f8aa336a9512da">
   <category name="fx/downmixer">
     <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmixer Scripts">
       <metadata>
@@ -34,6 +34,9 @@
       </metadata>
       <version name="0.0.0" author="Julius Kukla" time="2026-01-22T15:51:41Z">
         <source main="main">https://github.com/jkooks/jk_reascripts/raw/8361c2165e0248dd91b825542ccab1439a60baf8/items/jk_reposition_items_equally_in_time_selection.lua</source>
+      </version>
+      <version name="0.0.1" author="jkooks" time="2026-01-23T15:41:52Z">
+        <source main="main">https://github.com/jkooks/jk_reascripts/raw/2ec9f8f9c14023ceb93f8650a3f8aa336a9512da/items/jk_reposition_items_equally_in_time_selection.lua</source>
       </version>
     </reapack>
   </category>
