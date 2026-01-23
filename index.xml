@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="c6d968c8330aa299b155123868a581741d785858">
+<index version="1" name="jk_reascripts" commit="6d295a8873c64e13d5f03effdd2be34f1565c2ee">
   <category name="fx/downmixer">
     <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmixer Scripts">
       <metadata>
@@ -14,6 +14,12 @@
       </metadata>
       <version name="0.0.1" author="jkooks" time="2026-01-23T16:44:00Z">
         <source main="main" file="jk_downmix_selected_takes_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/c6d968c8330aa299b155123868a581741d785858/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
+      </version>
+      <version name="0.0.2" author="jkooks" time="2026-01-23T16:49:39Z">
+        <source main="main" file="jk_downmix_selected_takes_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
+        <source main="main" file="jk_downmix_selected_takes_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
+        <source main="main" file="jk_downmix_selected_tracks_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
+        <source main="main" file="jk_downmix_selected_tracks_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
       </version>
     </reapack>
   </category>
@@ -51,6 +57,13 @@
       </metadata>
       <version name="0.0.0" author="jkooks" time="2026-01-23T16:44:00Z">
         <source main="main" file="jk_extend_trim_options.lua">https://github.com/jkooks/jk_reascripts/raw/c6d968c8330aa299b155123868a581741d785858/items/extend_trim/jk_extend_trim_options.lua</source>
+      </version>
+      <version name="0.0.1" author="jkooks" time="2026-01-23T16:49:39Z">
+        <source main="main" file="jk_extend_trim_options.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/items/extend_trim/jk_extend_trim_options.lua</source>
+        <source main="main" file="jk_extend_trim_left_edge_no_fade.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/items/extend_trim/jk_extend_trim_left_edge_no_fade.lua</source>
+        <source main="main" file="jk_extend_trim_right_edge_no_fade.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/items/extend_trim/jk_extend_trim_right_edge_no_fade.lua</source>
+        <source main="main" file="jk_extend_trim_tail_within_bounds.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/items/extend_trim/jk_extend_trim_tail_within_bounds.lua</source>
+        <source main="main" file="jk_extend_trim_top_within_bounds.lua">https://github.com/jkooks/jk_reascripts/raw/6d295a8873c64e13d5f03effdd2be34f1565c2ee/items/extend_trim/jk_extend_trim_top_within_bounds.lua</source>
       </version>
     </reapack>
   </category>
