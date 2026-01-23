@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="jk_reascripts" commit="381a6f5dd9f9b6cf052d46a102a1ecc8d28590d7">
-  <category name="fx/downmixer">
-    <reapack name="downmixer_scripts_metapackage.lua" type="script" desc="Downmixer Scripts">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Scripts that add the Downmixer plugin to either selected tracks or takes. Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
-}
-]]></description>
-        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
-      </metadata>
-      <version name="0.0.1" author="Julius Kukla" time="2026-01-23T07:43:46Z">
-        <source main="main" file="jk_downmix_selected_takes_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_takes_to_mono.lua</source>
-        <source main="main" file="jk_downmix_selected_takes_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_takes_to_stereo.lua</source>
-        <source main="main" file="jk_downmix_selected_tracks_to_mono.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_tracks_to_mono.lua</source>
-        <source main="main" file="jk_downmix_selected_tracks_to_stereo.lua">https://github.com/jkooks/jk_reascripts/raw/401c1ab0413d8e9246ca90f2686a4a530ca2de1e/fx/downmixer/jk_downmix_selected_tracks_to_stereo.lua</source>
-      </version>
-    </reapack>
-  </category>
+<index version="1" name="jk_reascripts" commit="f0f2fe45f6528db7fdfd59c784fdac8fa3f40dcc">
   <category name="items">
     <reapack name="jk_reposition_items_equally_in_time_selection.lua" type="script" desc="Reposition Items Equally In Time Selection">
       <metadata>
@@ -37,27 +17,6 @@
       </version>
       <version name="0.0.1" author="jkooks" time="2026-01-23T15:41:52Z">
         <source main="main">https://github.com/jkooks/jk_reascripts/raw/2ec9f8f9c14023ceb93f8650a3f8aa336a9512da/items/jk_reposition_items_equally_in_time_selection.lua</source>
-      </version>
-    </reapack>
-  </category>
-  <category name="items/extend_trim">
-    <reapack name="extend_trim_scripts_metapackage.lua" type="script" desc="Extend Trim Scripts">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Scripts used to extend/trim items easily. Distributed under the GNU GPL v3 License. See license.txt for more information.\par}
-}
-]]></description>
-        <link rel="website">https://github.com/jkooks/jk_reascripts</link>
-      </metadata>
-      <version name="0.0.0" author="Julius Kukla" time="2026-01-23T08:01:47Z">
-        <source main="main" file="jk_extend_trim_options.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_options.lua</source>
-        <source main="main" file="jk_extend_trim_left_edge_no_fade.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_left_edge_no_fade.lua</source>
-        <source main="main" file="jk_extend_trim_right_edge_no_fade.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_right_edge_no_fade.lua</source>
-        <source main="main" file="jk_extend_trim_tail_within_bounds.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_tail_within_bounds.lua</source>
-        <source main="main" file="jk_extend_trim_top_within_bounds.lua">https://github.com/jkooks/jk_reascripts/raw/1776cdcf89fe6ca79fe99176f983672b185057c7/items/extend_trim/jk_extend_trim_top_within_bounds.lua</source>
       </version>
     </reapack>
   </category>
