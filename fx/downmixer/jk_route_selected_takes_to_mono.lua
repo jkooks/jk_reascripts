@@ -1,5 +1,5 @@
--- @description Downmix Selected Takes To Mono
--- @about Adds the Downmixer plugin to the selected takes and downmixes them to mono.
+-- @description Route Selected Takes To Mono
+-- @about Adds the Downmixer plugin to the selected takes and routes them to mono.
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author jkooks
 -- @version 0.0.1
@@ -20,7 +20,7 @@ function Main()
 	reaper.PreventUIRefresh(-1)
 	reaper.UpdateArrange()
 
-	reaper.Undo_EndBlock("Downmix Selected Takes to Mono", -1)
+	reaper.Undo_EndBlock("Route Selected Takes to Mono", -1)
 end
 
 Main()

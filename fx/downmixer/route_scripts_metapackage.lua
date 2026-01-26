@@ -1,0 +1,12 @@
+-- @description Routing Scripts
+-- @about Scripts that add the Downmixer plugin to either selected tracks or takes in order to route them to a certain output.
+--      Distributed under the GNU GPL v3 License. See license.txt for more information.
+-- @author jkooks
+-- @version 0.0.2
+-- @link https://github.com/jkooks/jk_reascripts
+-- @metapackage
+-- @provides
+-- 	[main] jk_route_selected_takes_to_mono.lua
+-- 	[main] jk_route_selected_takes_to_stereo.lua
+-- 	[main] jk_route_selected_tracks_to_mono.lua
+-- 	[main] jk_route_selected_tracks_to_stereo.lua

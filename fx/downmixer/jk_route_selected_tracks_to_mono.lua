@@ -1,5 +1,5 @@
--- @description Downmix Selected Tracks To Stereo
--- @about Adds the Downmixer plugin to the selected tracks and downmixes them to stereo.
+-- @description Route Selected Tracks To Mono
+-- @about Adds the Downmixer plugin to the selected tracks and routes them to mono.
 -- 		Distributed under the GNU GPL v3 License. See license.txt for more information.
 -- @author jkooks
 -- @version 0.0.1
@@ -15,12 +15,12 @@ function Main()
 	reaper.Undo_BeginBlock()
 	reaper.PreventUIRefresh(1)
 
-	jk_fx.RouteSelectedTrackOutputs({jk_fx.ChannelsToFlag(1), jk_fx.ChannelsToFlag(2)}, true)
+	jk_fx.RouteSelectedTrackOutputs({jk_fx.ChannelsToFlag(1)}, true)
 
 	reaper.PreventUIRefresh(-1)
 	reaper.UpdateArrange()
 
-	reaper.Undo_EndBlock("Downmix Selected Tracks to Stereo", -1)
+	reaper.Undo_EndBlock("Route Selected Tracks to Mono", -1)
 end
 
 Main()
